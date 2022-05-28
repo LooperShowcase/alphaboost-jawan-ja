@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <img src="" alt="" />
+    <title>pc & phone games</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="#singup" href="signup.html">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+      <li id="ter"><input id="alwan" onchange="changedf()" type="color" /></li>
+      <li>
+        <img
+          id="sora"
+          src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"
+          width="50px"
+        />
+      </li>
+    </ul>
+
+    <img
+      id="soea"
+      src="https://target.scene7.com/is/image/Target/Cat_Nav_VideoGames-201215-1608014929542"
+      alt="https://target.scene7.com/is/image/Target/Cat_Nav_VideoGames-201215-1608014929542"
+    />
+
+    <div>
+      <form>
+        <label>fist name</label>
+        <input type="text" />
+        <br />
+        <label>last name</label>
+        <input type="text" />
+        <br />
+        <label>Email</label>
+        <input type="email" />
+        <br />
+        <label>password</label>
+        <input type="password" />
+        <br />
+        <label>gender</label>
+        <input type="radio" />
+        <br />
+        <label>famele</label>
+        <input type="radio" />
+        <br />
+        <label>male</label>
+        <input type="radio" />
+        <br />
+        <input id="pro" type="file" onchange="changeporifule()" />
+      </form>
+    </div>
+    <script>
+      function changedf() {
+        var newcolor = document.getElementById("alwan").value;
+        document.body.style.background = newcolor;
+      }
+      function changeporifule() {
+        var newprofile = document.getElementById("pro").files[0].name;
+        document.getElementById("sora").src = newprofile;
+      }
+    </script>
+  </body>
+</html>
